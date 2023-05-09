@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="BDD Test Suite" verbose="1" parallel="tests" thread-count="50" configfailurepolicy="continue">
+
+    <!-- CHROME testing -->
+
+    <!-- Chrome in the US -->
+
+    <test name="Chrome on Windows 10 in the US DC">
+        <parameter name="browser" value="CHROME"/>
+        <parameter name="version" value="74.0"/>
+        <parameter name="platformName" value="Windows 10"/>
+        <classes>
+            <class name="com.saucelabs.example.DesktopTestRunner"/>
+        </classes>
+    </test>
+
+    <test name="Chrome on macOS in the US DC">
+        <parameter name="browser" value="CHROME"/>
+        <parameter name="version" value="74"/>
+        <parameter name="platformName" value="macOS 10.13"/>
+        <parameter name="dataCenter" value="US"/>
+        <classes>
+            <class name="com.saucelabs.example.DesktopTestRunner"/>
+        </classes>
+    </test>
+
+    <!--Chrome in the EU-->
+
+    <test name="Chrome on Windows 10 in the EU DC">
+        <parameter name="browser" value="CHROME"/>
+        <parameter name="version" value="74.0"/>
+        <parameter name="platformName" value="Windows 10"/>
+        <parameter name="dataCenter" value="EU"></parameter>
+        <classes>
+            <class name="com.saucelabs.example.DesktopTestRunner"/>
+        </classes>
+    </test>
+
+    <test name="Chrome on macOS in the EU DC">
+        <parameter name="browser" value="CHROME"/>
+        <parameter name="version" value="latest"/>
+        <parameter name="platformName" value="macOS 10.13"/>
+        <parameter name="dataCenter" value="EU"/>
+        <classes>
+            <class name="com.saucelabs.example.DesktopTestRunner"/>
+        </classes>
+    </test>
+
+    <!-- Chrome on Headless-->
+
+    <test name="Chrome on Headless">
+        <parameter name="browser" value="CHROME"/>
+        <parameter name="version" value="latest"/>
+        <parameter name="platformName" value="Linux"/>
+        <classes>
+            <class name="com.saucelabs.example.HeadlessTestRunner"/>
+        </classes>
+    </test>
+
+    <!-- FIREFOX testing -->
+
+    <!-- Firefox in the US -->
+
+    <test name="Firefox on Windows 10 in the US DC">
+        <parameter name="browser" value="FIREFOX"/>
+        <parameter name="version" value="64.0"/>
+        <parameter name="platformName" value="Windows 10"/>
+        <classes>
+            <class name="com.saucelabs.example.DesktopTestRunner"/>
+        </classes>
+    </test>
+
+    <test name="Firefox on macOS in the US DC">
+        <parameter name="browser" value="FIREFOX"/>
+        <parameter name="version" value="64.0"/>
+        <parameter name="platformName" value="macOS 10.13"/>
+        <classes>
+            <class name="com.saucelabs.example.DesktopTestRunner"/>
+        </classes>
+    </test>
+
+    <!-- Firefox in the EU -->
+
+    <test name="Firefox on Windows 10 in the EU DC">
+        <parameter name="browser" value="FIREFOX"/>
+        <parameter name="version" value="64.0"/>
+        <parameter name="platformName" value="Windows 10"/>
+        <parameter name="dataCenter" value="EU"/>
+        <classes>
+            <class name="com.saucelabs.example.DesktopTestRunner"/>
+        </classes>
+    </test>
+
+    <test name="Firefox on macOS in the EU DC">
+        <parameter name="browser" value="FIREFOX"/>
+        <parameter name="version" value="64.0"/>
+        <parameter name="platformName" value="macOS 10.13"/>
+        <parameter name="dataCenter" value="EU"/>
+        <classes>
+            <class name="com.saucelabs.example.DesktopTestRunner"/>
+        </classes>
+    </test>
+
+    <!-- Firefox on Headless-->
+
+    <test name="Firefox on Headless">
+        <parameter name="browser" value="FIREFOX"/>
+        <parameter name="version" value="latest"/>
+        <parameter name="platformName" value="Linux"/>
+        <classes>
+            <class name="com.saucelabs.example.HeadlessTestRunner"/>
+        </classes>
+    </test>
+
+    <!-- SAFARI testing -->
+
+    <test name="Safari on macOS in the US DC">
+        <parameter name="browser" value="SAFARI"/>
+        <parameter name="version" value="12"/>
+        <parameter name="platformName" value="macOS 10.13"/>
+        <classes>
+            <class name="com.saucelabs.example.DesktopTestRunner"/>
+        </classes>
+    </test>
+
+    <test name="Safari on macOS in the EU DC">
+        <parameter name="browser" value="SAFARI"/>
+        <parameter name="version" value="12"/>
+        <parameter name="platformName" value="macOS 10.13"/>
+        <parameter name="dataCenter" value="EU"/>
+        <classes>
+            <class name="com.saucelabs.example.DesktopTestRunner"/>
+        </classes>
+    </test>
+
+
+</suite>

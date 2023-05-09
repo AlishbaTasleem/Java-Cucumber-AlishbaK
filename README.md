@@ -1,7 +1,7 @@
 # Java-Cucumber-AlishbaK
 
-To execute the suite, run
-$ mvn test
+To execute the suite, run:
+**$ mvn test**
 
 Scenarios covered:
 1. Login with valid credentials
